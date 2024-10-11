@@ -1,0 +1,63 @@
+:root {
+  --title: "Playfair Display", serif;
+  --text: "Roboto", sans-serif;
+  --price: "Prata", serif;
+
+  --color-white: #FFFFFF;
+  --color-background: #E5E5E5;
+  --color-nav: #555248;
+  --color-title: #1B1A17;
+  --color-text: rgba(27, 26, 23, 0.82);
+  --color-button: #444240;
+  --color-button-gold: #D4B098;
+  --color-bg-footer: #444240;
+  --color-icon: #5C5C50;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--color-text);
+
+  margin: 0;
+  min-width: 1366px;
+}
+
+.container {
+  max-width: 1171px;
+  margin: 0 auto;
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  width: 129px;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 26px 38px 26px 38px;
+  color: var(--color-white);
+  letter-spacing: .5px;
+}
