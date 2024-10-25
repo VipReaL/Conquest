@@ -135,7 +135,7 @@
 
 .showcase-button {
   align-self: flex-end;
-  text-decoration: none;  
+  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   color: var(--color-button);
@@ -155,8 +155,11 @@
 }
 
 .showcase-item {
-  padding-block: 66px;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
   padding-inline: 25px;
+  background-color: #FDFDFB;
+  height: 387px;
 }
 
 .showcase-article {
@@ -208,8 +211,13 @@
 /* guarantee */
 
 .guarantee {
-min-height: 519px;
-background: linear-gradient(to right, #F7F5EF 30%, transparent 30%);
+  max-width: 1366px;
+  margin: 0 auto;
+  min-height: 519px;
+  background-color: #FDFDFB;
+  background-image: url(../img/lines_banner.png), linear-gradient(to right, #F7F5EF 30%, transparent 30%);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .guarantee-wrapper {
@@ -227,9 +235,7 @@ background: linear-gradient(to right, #F7F5EF 30%, transparent 30%);
   margin: 0;
 }
 
-.guarantee-text-column {
-
-}
+.guarantee-text-column {}
 
 .guarantee-title {
   font-family: var(--title);
@@ -292,7 +298,7 @@ background: linear-gradient(to right, #F7F5EF 30%, transparent 30%);
   gap: 10px;
   grid-template-columns: 242px 377px;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "img-1 img-3"
     "img-2 img-3";
 }
