@@ -13,7 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/header.css">
-  <!-- <link rel="stylesheet" href="style/index.css"> -->
+  <link rel="stylesheet" href="style/card.css">
   <link rel="stylesheet" href="style/footer.css">
   <title>CONQUEST</title>
 </head>
@@ -61,9 +61,106 @@
     </nav>
   </header>
 
-  <main class="main">
-
+  <main class="main container">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="catalog.html">Каталог</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#">Мужские часы</a>
+      </li>
+      <li class="breadcrumb-item">
+        Georg Jensen
+      </li>
+    </ul>
+    <section class="gallery">
+      <section class="gallery-img-column">
+        <div>
+          <img src="img/watch_card_1.jpeg" alt="watch_card_1" width="423" height="520">
+        </div>
+        <ul class="gallery-img-list">
+          <li class="gallery-img-item active">
+            <a href="#" class="gallery-img-link">
+              <img src="img/watches_2.png" alt="watches_2" width="127" height="121">
+            </a>
+          </li>
+          <li class="gallery-img-item">
+            <a href="#" class="gallery-img-link">
+              <img src="img/watches_3.png" alt="watches_3" width="127" height="121">
+            </a>
+          </li>
+          <li class="gallery-img-item">
+            <a href="#" class="gallery-img-link">
+              <img src="img/watches_4.png" alt="watches_4" width="127" height="121">
+            </a>
+          </li>
+          <li class="gallery-img-item">
+            <a href="#" class="gallery-img-link">
+              <img src="img/watches_5.png" alt="watches_5" width="127" height="121">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery-text-column">
+        <h2 class="gallery-title">KULTE, 26 ММ</h2>
+        <p class="gallery-price">12700 p</p>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <a class="gallery-link" href="#">Описание</a>
+          </li>
+          <li class="gallery-item">
+            <a class="gallery-link" href="#">Технические характеристики</a>
+          </li>
+        </ul>
+        <p class="gallery-text">
+          Наручные часы KULTE, разработанные датским дизайнером Хэннингом Коппелем, были выпущены в 1982 году. Они были встречены аплодисментами, а дизайн считался революционным.
+        </p>
+        <p class="gallery-text">
+          Общая эстетика минималистична, а острые, плавные линии корпуса стали легендарными. Механизм Swiss Made обеспечивает высокий уровень технических характеристик.
+        </p>
+        <p class="gallery-text">
+          Наручные часы KULTE — это образец датского дизайнерского наследия, история баланса и точности как внутри, так и снаружи.
+        </p>
+        <button class="gallery-button button">В КОРЗИНУ</button>
+      </section>
+    </section>
   </main>
+
+  <aside class="look container">
+    <h2 class="look-title">Вы смотрели</h2>
+    <ul class="look-list">
+      <li class="look-item">
+        <a class="look-link" href="#">
+          <article class="look-article">
+            <h3 class="look-subtitle">TECHNE</h3>
+            <p class="look-text">15700 p</p>
+            <img src="img/часы1.png" alt="часы1" width="360" height="374">
+          </article>
+        </a>
+      </li>
+      <li class="look-item">
+        <a class="look-link" href="#">
+          <article class="look-article">
+            <h3 class="look-subtitle">TECHNE</h3>
+            <p class="look-text">15700 p</p>
+            <img src="img/часы2.png" alt="часы2" width="360" height="374">
+          </article>
+        </a>
+      </li>
+      <li class="look-item">
+        <a class="look-link" href="#">
+          <article class="look-article">
+            <h3 class="look-subtitle">TECHNE</h3>
+            <p class="look-text">22700 p</p>
+            <img src="img/часы3.png" alt="часы3" width="360" height="374">
+          </article>
+        </a>
+      </li>
+    </ul>
+  </aside>
 
   <footer class="footer" id="footer">
     <div class="footer-wrapper">
@@ -74,8 +171,7 @@
           </a>
         </li>
         <li class="footer-item">
-          <a href="tel:84994504797">8 (499) 450-47-97
-          </a>
+          <a href="tel:84994504797">8 (499) 450-47-97</a>
         </li>
         <li class="footer-item">
           <a href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
