@@ -73,8 +73,29 @@
 
 /* START двухдиапазонный ценовой слайдер */
 
+.catalog-form-product .summary {
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+
+  font-family: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  color: #444240;
+}
+
+.catalog-form-product label {
+  font-family: var(--text);
+  font-size: 12px;
+  font-weight: 400;
+  color: #6F6E6D;
+}
+
+.catalog-form-product input {
+  accent-color: #6F6E6D;
+}
+
 .range-slider {
-  height: 5px;
+  height: 2px;
   position: relative;
   background-color: #e1e9f6;
   border-radius: 2px;
@@ -85,7 +106,7 @@
   right: 10%;
   position: absolute;
   border-radius: 5px;
-  background-color: #1b53c0;
+  background-color: #000000;
 }
 
 /* - стиль для элементов ввода диапазона */
@@ -97,17 +118,17 @@
   position: absolute;
   width: 100%;
   height: 5px;
-  top: -7px;
+  top: -6px;
   background: none;
   pointer-events: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 .range-input input::-webkit-slider-thumb {
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
-  border: 3px solid #1b53c0;
+  border: 2px solid #000000;
   background-color: #fff;
   pointer-events: auto;
   -webkit-appearance: none;
@@ -116,7 +137,7 @@
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border: 3px solid #1b53c0;
+  border: 2px solid #000000;
   background-color: #fff;
   pointer-events: auto;
   -moz-appearance: none;
@@ -135,7 +156,7 @@
   margin-right: 5px;
 }
 .range-price input {
-  width: 40px;
+  width: 55px;
   padding: 5px;
 }
 .range-price input:first-of-type {
@@ -160,6 +181,7 @@
   max-width: 252px;
   max-height: 301px;
   position: relative;
+  background-color: #FDFDFB;
 }
 
 .catalog-item-link {
@@ -167,7 +189,6 @@
   height: 100%;
   width: 100%;
   text-decoration: none;
-  
 }
 
 .catalog-item-title {
@@ -232,3 +253,52 @@
   color: #1B1A17;
 }
 
+.accessories {
+  margin-block-end: 80px;
+}
+
+.accessories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 51px;
+}
+
+.accessories-title {
+  font-family: var(--title);
+  font-size: 32px;
+  font-weight: 400;
+  color: #1B1A17;
+  margin: 0;
+}
+
+.show-more {
+  font-family: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  color: #444240;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #C4C0B6;
+  text-underline-offset: 10px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+}
+
+.accessories .catalog-item {
+  max-width: 360px;
+  max-height: 374px;
+}
+
+.accessories .catalog-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

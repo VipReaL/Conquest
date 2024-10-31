@@ -93,7 +93,7 @@
     <div class="catalog-product">
       <form  class="catalog-form-product" action="#" method="get" name="productSelection">
         <details open>
-          <summary>Стоимость</summary>
+          <summary class="summary">Стоимость</summary>
           <div class="range">
             <div class="range-slider">
               <span class="range-selected"></span>
@@ -103,15 +103,15 @@
               <input type="range" class="max" min="0" max="100000" value="90000" step="10">
             </div>
             <div class="range-price">
-              <label for="min">Min</label>
+              <label class="range-price-lable" for="min">Min</label>
               <input type="number" name="min" value="12000">
-              <label for="max">Max</label>
+              <label class="range-price-lable" for="max">Max</label>
               <input type="number" name="max" value="90000">
             </div>
           </div>
         </details>
         <details open>
-          <summary>Бренд</summary>
+          <summary class="summary">Бренд</summary>
           <div>
             <input type="checkbox" id="Techne">
             <label for="Techne">Techne</label>
@@ -138,13 +138,13 @@
           </div>
         </details>
         <details>
-          <summary>Механизм</summary>
+          <summary class="summary">Механизм</summary>
         </details>
         <details>
-          <summary>Материал</summary>
+          <summary class="summary">Материал</summary>
         </details>
         <details>
-          <summary>Цвет</summary>
+          <summary class="summary">Цвет</summary>
         </details>
         <button type="submit" hidden>Применить</button>
         <button type="reset">сбросить фильтр</button>
