@@ -27,6 +27,7 @@ html {
   color: var(--color-text);
 
   margin: 0;
+  padding-block-end: 275px;
   min-width: 1366px;
 }
 

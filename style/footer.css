@@ -1,6 +1,10 @@
 .footer {
   background-color: var(--color-bg-footer);
   min-height: 275px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer-wrapper {

@@ -13,7 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/header.css">
-  <!-- <link rel="stylesheet" href="style/index.css"> -->
+  <link rel="stylesheet" href="style/catalog.css">
   <link rel="stylesheet" href="style/footer.css">
   <title>CONQUEST</title>
 </head>
@@ -61,8 +61,211 @@
     </nav>
   </header>
 
-  <main class="main">
+  <main class="catalog-main container">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="catalog.html">Каталог</a>
+      </li>
+      <li class="breadcrumb-item">
+        Мужские часы
+      </li>
+    </ul>
+    
+    <div class="catalog-head">
+      <h1 class="catalog-title">Мужские часы</h1>
 
+      <form class="productSorting" action="#" method="get" name="productSorting">
+        <label for="product-sorting">Сортировать по:</label>
+        <select name="product-sorting" id="product-sorting">
+          <option value="name-(a-z)">названию (а-я)</option>
+          <option value="name-(z-a)">названию (я-а)</option>
+          <option value="popularity" selected>популярности</option>
+          <option value="price-increases">возрастанию цены</option>
+          <option value="price-reduction">уменьшению цены</option>
+          <option value="discount-amount">размеру скидки</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="catalog-product">
+      <form  class="catalog-form-product" action="#" method="get" name="productSelection">
+        <details open>
+          <summary>Стоимость</summary>
+          <div class="range">
+            <div class="range-slider">
+              <span class="range-selected"></span>
+            </div>
+            <div class="range-input">
+              <input type="range" class="min" min="0" max="100000" value="12000" step="10">
+              <input type="range" class="max" min="0" max="100000" value="90000" step="10">
+            </div>
+            <div class="range-price">
+              <label for="min">Min</label>
+              <input type="number" name="min" value="12000">
+              <label for="max">Max</label>
+              <input type="number" name="max" value="90000">
+            </div>
+          </div>
+        </details>
+        <details open>
+          <summary>Бренд</summary>
+          <div>
+            <input type="checkbox" id="Techne">
+            <label for="Techne">Techne</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Rado">
+            <label for="Rado">Rado</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Bvlgari">
+            <label for="Bvlgari">Bvlgari</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Tissot">
+            <label for="Tissot">Tissot</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Omega">
+            <label for="Omega">Omega</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Montblanc">
+            <label for="Montblanc">Montblanc</label>
+          </div>
+        </details>
+        <details>
+          <summary>Механизм</summary>
+        </details>
+        <details>
+          <summary>Материал</summary>
+        </details>
+        <details>
+          <summary>Цвет</summary>
+        </details>
+        <button type="submit" hidden>Применить</button>
+        <button type="reset">сбросить фильтр</button>
+      </form>
+  
+      <ul class="catalog-list catalog-list-compact">
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Techne</h3>
+            <p class="catalog-item-price">12 700 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watch_1.png" width="272" height="320" alt="Techne">
+          </a>
+        </li>
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Techne</h3>
+            <p class="catalog-item-price">12 700 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watch_2.png" width="272" height="320" alt="Techne">
+          </a>
+        </li>
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Techne</h3>
+            <p class="catalog-item-price">15 700 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watch_3.png" width="272" height="320" alt="Techne">
+          </a>
+        </li>
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Techne</h3>
+            <p class="catalog-item-price">15 700 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watch_4.png" width="272" height="320" alt="Techne">
+          </a>
+        </li>
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Techne</h3>
+            <p class="catalog-item-price">12 700 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watch_5.png" width="272" height="320" alt="Techne">
+          </a>
+        </li>
+        <li class="catalog-item catalog-item-promo">
+          <img class="catalog-item-img" src="img/catalog/banner_catalog.png" width="250" height="300" alt="promo">
+        </li>
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Bvlgari</h3>
+            <p class="catalog-item-price">72 700 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watch_9.png" width="272" height="320" alt="Bvlgari">
+          </a>
+        </li>
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Techne</h3>
+            <p class="catalog-item-price">22 700 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watches_10.png" width="272" height="320" alt="Techne">
+          </a>
+        </li>
+        <li class="catalog-item catalog-item-compact">
+          <a class="catalog-item-link" href="card.html">
+            <h3 class="catalog-item-title">Rado</h3>
+            <p class="catalog-item-price">22 000 ₽</p>
+            <img class="catalog-item-img" src="img/catalog/watch_11.png" width="272" height="320" alt="Rado">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="pagination">
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">&lt;</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">1</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">2</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link pagination-link-current">3</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">…</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">12</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">&gt;</a>
+      </li>
+    </ul>
+
+    <section class="accessories">
+      <header class="accessories-header">
+        <h2 class="accessories-title">Ремешки</h2>
+        <a class="show-more" href="catalog.html">Смотреть все</a>
+      </header>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <a class="catalog-item-link" href="#">
+          <h3 class="catalog-item-title">Georg Jensen</h3>
+          <p class="catalog-item-price">6 500 ₽</p>
+          <img src="img/catalog/band_1.png" width="380" height="394" alt="Georg Jensen">
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a class="catalog-item-link" href="#">
+            <h3 class="catalog-item-title">Nato</h3>
+            <p class="catalog-item-price">3 200 ₽</p>
+            <img src="img/catalog/band_2.png" width="380" height="394" alt="Nato">
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a class="catalog-item-link" href="#">
+            <h3 class="catalog-item-title">Spark</h3>
+            <p class="catalog-item-price">5 400 ₽</p>
+            <img src="img/catalog/band_3.png" width="380" height="394" alt="Spark">
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer class="footer" id="footer">
@@ -134,6 +337,48 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+    let rangeMin = 100;
+    const range = document.querySelector(".range-selected");
+    const rangeInput = document.querySelectorAll(".range-input input");
+    const rangePrice = document.querySelectorAll(".range-price input");
+
+    rangeInput.forEach((input) => {
+      input.addEventListener("input", (e) => {
+        let minRange = parseInt(rangeInput[0].value);
+        let maxRange = parseInt(rangeInput[1].value);
+        if (maxRange - minRange < rangeMin) {
+          if (e.target.className === "min") {
+            rangeInput[0].value = maxRange - rangeMin;
+          } else {
+            rangeInput[1].value = minRange + rangeMin;
+          }
+        } else {
+          rangePrice[0].value = minRange;
+          rangePrice[1].value = maxRange;
+          range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+          range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
+        }
+      });
+    });
+
+    rangePrice.forEach((input) => {
+      input.addEventListener("input", (e) => {
+        let minPrice = rangePrice[0].value;
+        let maxPrice = rangePrice[1].value;
+        if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
+          if (e.target.className === "min") {
+            rangeInput[0].value = minPrice;
+            range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+          } else {
+            rangeInput[1].value = maxPrice;
+            range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+          }
+        }
+      });
+    });
+  </script>
 
 </body>
 

@@ -78,8 +78,16 @@
     </ul>
     <section class="gallery">
       <section class="gallery-img-column">
-        <div>
-          <img src="img/watch_card_1.jpeg" alt="watch_card_1" width="423" height="520">
+        <div class="gallery-img">
+          <button class="gallery-img-button">
+            <img src="img/arrow_left.svg" alt="arrow_left">
+          </button>
+          <div>
+            <img src="img/watch_card_1.jpeg" alt="watch_card_1" width="423" height="520">
+          </div>
+          <button class="gallery-img-button">
+            <img src="img/arrow_right.svg" alt="arrow_right">
+          </button>
         </div>
         <ul class="gallery-img-list">
           <li class="gallery-img-item active">
@@ -116,50 +124,63 @@
           </li>
         </ul>
         <p class="gallery-text">
-          Наручные часы KULTE, разработанные датским дизайнером Хэннингом Коппелем, были выпущены в 1982 году. Они были встречены аплодисментами, а дизайн считался революционным.
+          Наручные часы KULTE, разработанные датским дизайнером Хэннингом Коппелем, были выпущены в 1982 году. Они были
+          встречены аплодисментами, а дизайн считался революционным.
         </p>
         <p class="gallery-text">
-          Общая эстетика минималистична, а острые, плавные линии корпуса стали легендарными. Механизм Swiss Made обеспечивает высокий уровень технических характеристик.
+          Общая эстетика минималистична, а острые, плавные линии корпуса стали легендарными. Механизм Swiss Made
+          обеспечивает высокий уровень технических характеристик.
         </p>
         <p class="gallery-text">
-          Наручные часы KULTE — это образец датского дизайнерского наследия, история баланса и точности как внутри, так и снаружи.
+          Наручные часы KULTE — это образец датского дизайнерского наследия, история баланса и точности как внутри, так
+          и снаружи.
         </p>
         <button class="gallery-button button">В КОРЗИНУ</button>
       </section>
     </section>
   </main>
 
-  <aside class="look container">
-    <h2 class="look-title">Вы смотрели</h2>
-    <ul class="look-list">
-      <li class="look-item">
-        <a class="look-link" href="#">
-          <article class="look-article">
-            <h3 class="look-subtitle">TECHNE</h3>
-            <p class="look-text">15700 p</p>
-            <img src="img/часы1.png" alt="часы1" width="360" height="374">
-          </article>
-        </a>
-      </li>
-      <li class="look-item">
-        <a class="look-link" href="#">
-          <article class="look-article">
-            <h3 class="look-subtitle">TECHNE</h3>
-            <p class="look-text">15700 p</p>
-            <img src="img/часы2.png" alt="часы2" width="360" height="374">
-          </article>
-        </a>
-      </li>
-      <li class="look-item">
-        <a class="look-link" href="#">
-          <article class="look-article">
-            <h3 class="look-subtitle">TECHNE</h3>
-            <p class="look-text">22700 p</p>
-            <img src="img/часы3.png" alt="часы3" width="360" height="374">
-          </article>
-        </a>
-      </li>
-    </ul>
+  <aside class="look">
+    <h2 class="look-title container">Вы смотрели</h2>
+    <div class="look-container">
+      <ul class="look-list">
+        <li class="look-item">
+          <a class="look-link" href="#">
+            <article class="look-article">
+              <h3 class="look-subtitle">TECHNE</h3>
+              <p class="look-text">15700 p</p>
+              <img src="img/часы1.png" alt="часы1" width="360" height="374">
+            </article>
+          </a>
+        </li>
+        <li class="look-item">
+          <a class="look-link" href="#">
+            <article class="look-article">
+              <h3 class="look-subtitle">TECHNE</h3>
+              <p class="look-text">15700 p</p>
+              <img src="img/часы2.png" alt="часы2" width="360" height="374">
+            </article>
+          </a>
+        </li>
+        <li class="look-item">
+          <a class="look-link" href="#">
+            <article class="look-article">
+              <h3 class="look-subtitle">TECHNE</h3>
+              <p class="look-text">22700 p</p>
+              <img src="img/часы3.png" alt="часы3" width="360" height="374">
+            </article>
+          </a>
+        </li>
+      </ul>
+      <button class="gallery-img-button button-left" type="button">
+        <span class="visually-hidden">Предыдущий</span>
+        <img src="img/arrow_left.svg" alt="arrow_left">
+      </button>
+      <button class="gallery-img-button button-right" type="button">
+        <span class="visually-hidden">Следующий</span>
+        <img src="img/arrow_right.svg" alt="arrow_right">
+      </button>
+    </div>
   </aside>
 
   <footer class="footer" id="footer">
